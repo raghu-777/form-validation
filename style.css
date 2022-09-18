@@ -262,13 +262,13 @@ span {
 
     #signUp {
         width: auto;
-        margin-left: 95px;
+        margin-left: 105px;
         margin-top: 10px;
     }
 
     #Login {
         width: auto;
-        margin-left: 40px;
+        margin-left: 50px;
     }
 
     #loginForm {
@@ -277,6 +277,6 @@ span {
     }
 
     #pwdError {
-        margin-left: 0px;
+        margin-left: 16px;
     }
 }
