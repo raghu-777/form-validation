@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="form" class="form">
+        <form method="post" id="registerForm">
+            <h1>Registration Form</h1>
+            <div id="name">
+                <label for="name-value">NAME</label><br />
+                <input type="text" name="name" id="name-value" placeholder="Full Name" autocomplete="off"/>
+                <span id="nameField"></span>
+                <span id="nameError"></span>
+            </div>
+
+            <div id="email">
+                <label for="email-value">EMAIL</label><br />
+                <input type="text" name="email" id="email-value" placeholder="Email" autocomplete="off"/>
+                <span id="emailField"></span>
+                <span id="emailError"></span>
+            </div>
+
+            <div id="number">
+                <label for="number-value">Contact Number</label><br />
+                <input type="text" name="number" id="number-value" placeholder="Contact Number" autocomplete="off"/>
+                <span id="phoneField"></span>
+                <span id="phoneError"></span>
+            </div>
+
+            <div id="password">
+                <label for="pwd-value">Create Password</label><br />
+                <input type="password" name="password" id="pwd-value" placeholder="Enter Your Password" autocomplete="off"/>
+                <span id="pwdField"></span>
+                <span id="pwdShow"><i class="fa-solid fa-eye"></i><i class="fa-solid fa-eye-slash"></i></span>
+                <span id="pwdError"></span>
+                <div id="pwdRules">
+                    <span>Must be atleat 8 characters</span>
+                    <span>Must contain atleast one uppercase character</span>
+                    <span>Must contain atleast one lowercase character</span>
+                    <span>Must contain atleast one numerical digit (0-9)</span>
+                    <span>Must contain atleast one special character @,#,$,%,&,_</span>
+                    <span>Can't contain space</span>
+                </div>
+            </div>
+
+            <div id="confirmPassword">
+                <label for="pwd-confirm">Confirm Password</label><br />
+                <input type="password" name="confirmPassword" id="pwd-confirm" placeholder="Enter Confirm Password" autocomplete="off"/>
+                <span id="pwdConfirmField"></span>
+                <span id="pwdConfirmShow"><i class="fa-solid fa-eye"></i><i class="fa-solid fa-eye-slash"></i></span>
+                <span id="pwdConfirmError"></span>
+            </div>
+
+            <button type="submit" id="btn">Sign Up</button>
+            <div>
+                <button id="Login">Already Have A Account? Click Here</button>
+            </div>
+
+        </form>
+        <div id="loginForm">
+            <form method="post">
+                <h1>Login Form</h1>
+
+                <div id="verifyEmail">
+                    <label for="email-value">EMAIL</label><br />
+                    <input type="email" name="email" id="verify-email-value" placeholder="Email" />
+                    <span id="emailCheckError"></span>
+                </div>
+
+                <div id="verifyPassword">
+                    <label for="pwd-value">Create Password</label><br />
+                    <input type="password" name="password" id="verify-pwd-value" placeholder="Enter Password" />
+                    <span id="pwdCheckError"></span>
+                </div>
+
+                <button type="submit" id="verifyBtn">Sign In</button>
+                <button id="signUp">Back to Sign Up Page</button>
+            </form>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+    <!-- ICONS -->
+    <!-- <i class="fa-solid fa-circle-exclamation"></i> -->
+    <!-- <i class="fa-solid fa-circle-check"></i> -->
+    <!-- <i class="fa-solid fa-eye"></i> -->
+    <!-- <i class="fa-solid fa-eye-slash"></i> -->
+    <!-- <i class="fa-solid fa-check"></i> -->
+    <!-- <i class="fa-solid fa-xmark"></i> -->
+</body>
+
+</html>

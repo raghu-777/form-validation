@@ -1,0 +1,282 @@
+body {
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    margin: 0;
+    padding: 0;
+}
+
+#form {
+    background-color: cyan;
+    width: 46vw;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 23%;
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+
+
+#loginForm {
+    display: none;
+}
+
+.form label {
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.form input {
+    width: 45vw;
+    height: 45px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#name,
+#email,
+#number,
+#password,
+#confirmPassword,
+#verifyEmail,
+#verifyPassword {
+    position: relative;
+    margin: 15px 0;
+
+}
+
+#password span {
+    font-size: 12px;
+}
+
+#pwdNotContaines,
+#pwdContaines {
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+}
+
+#pwdRules {
+    display: flex;
+    flex-direction: column;
+    color: red;
+}
+
+#pwdRules span {
+    display: none;
+}
+
+#pwdRules .fa-check {
+    /* color: #635656; */
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+#pwdRules .fa-xmark {
+    color: red;
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+.fa-circle-exclamation {
+    position: absolute;
+    right: 10px;
+    top: 45px;
+    color: red;
+    font-size: 20px;
+}
+
+.fa-circle-check {
+    position: absolute;
+    right: 10px;
+    top: 45px;
+    color: green;
+    font-size: 20px;
+}
+
+.fa-eye {
+    position: absolute;
+    right: 40px;
+    top: 45px;
+    color: cornflowerblue;
+    font-size: 20px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.fa-eye-slash {
+    position: absolute;
+    right: 40px;
+    top: 45px;
+    color: cornflowerblue;
+    font-size: 20px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.form h1 {
+    text-align: center;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+
+#btn,
+#verifyBtn {
+    width: 46vw;
+    height: 7vh;
+    border-radius: 3px;
+    margin: 10px 0px;
+    padding: 5px 0px;
+    border: none;
+    background-color: orangered;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#verifyBtn:hover {
+    color: red;
+    background-color: cornflowerblue;
+}
+
+#btn:hover {
+    color: red;
+    background-color: cornflowerblue;
+}
+
+span {
+    color: red;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 5px;
+}
+
+
+#signUp {
+    background-color: goldenrod;
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 15px;
+    width: 20vw;
+    height: auto;
+    cursor: pointer;
+}
+
+#signUp:hover {
+    background-color: cyan;
+    color: darkorange;
+}
+
+#Login {
+    padding: 5px 10px;
+    color: blueviolet;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 15px;
+    width: 20vw;
+    margin: 10px;
+    margin-left: 25%;
+    height: auto;
+    cursor: pointer;
+}
+
+
+#Login:hover {
+    background-color: cyan;
+    color: darkorange;
+}
+
+.signButtons {
+    margin: 20px;
+}
+
+#formButton {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width : 600px) {
+    #form {
+        width: 100%;
+        overflow-x: hidden;
+        left: 0%;
+        padding: 0;
+        height: 100vh;
+
+    }
+
+    .form label {
+        margin-left: 22px;
+    }
+
+    .form input {
+        width: 86%;
+        margin-left: 15px;
+    }
+
+    .fa-circle-exclamation {
+        right: 30px;
+    }
+
+    .fa-circle-check {
+        right: 30px;
+    }
+
+    span {
+        margin-left: 16px;
+    }
+
+    #pwdError {
+        margin-left: 0;
+    }
+
+    .fa-eye {
+        right: 60px;
+    }
+
+    .fa-eye-slash {
+        right: 60px;
+    }
+
+    #btn,
+    #verifyBtn {
+        width: 60%;
+        margin-left: 70px;
+    }
+
+    #signUp {
+        width: auto;
+        margin-left: 95px;
+        margin-top: 10px;
+    }
+
+    #Login {
+        width: auto;
+        margin-left: 40px;
+    }
+
+    #loginForm {
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+
+    #pwdError {
+        margin-left: 0px;
+    }
+}
