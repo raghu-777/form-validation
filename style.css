@@ -292,6 +292,7 @@ span {
     #btn,
     #verifyBtn {
         width: 60%;
+        height: 45px;
         margin-left: 70px;
     }
 
