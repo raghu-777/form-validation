@@ -132,7 +132,7 @@ body {
 #btn,
 #verifyBtn, #verifyEmailBtn, #resetPasswordBtn {
     width: 46vw;
-    height: 7vh;
+    height: 45px;
     border-radius: 3px;
     margin: 10px 0px;
     padding: 5px 0px;
@@ -304,7 +304,7 @@ span {
     #Login {
         width: auto;
         margin-top: 10px;
-        margin-left: 125px;
+        margin-left: 130px;
     }
 
     #loginForm {
