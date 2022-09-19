@@ -73,7 +73,7 @@ function emailCheck() {
         return false;
     }
 
-    if (!emailValue.match(/^[A-Za-z]+[0-9]*[\._\-]?[A-Za-z0-9]@[a-zA-z]+\.[a-z]{2,4}$/)) {
+    if (!emailValue.match(/^[A-Za-z]+[0-9]*[\._\-]?[A-Za-z0-9]@(gmail|yahoo|outlook|protonmail|aol|icloud|gmx|tcs)\.(com|org|co.in|net|in)$/)) {
         emailErrorLogo.innerHTML = "<i class='fa-solid fa-circle-exclamation'></i>";
         document.getElementById('emailError').innerHTML = "Please Enter Valid Email";
         document.getElementById('emailError').style.color = "red";
