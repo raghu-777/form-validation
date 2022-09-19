@@ -312,6 +312,14 @@ span {
         padding-top: 20%;
         padding-bottom: 20%;
     }
+    
+     #pwdReset, #verifyEmailBtn {
+        margin-left: 125px;
+    }
+
+    #resetPasswordBtn {
+        margin-left: 15px;
+    }
 
     #pwdError {
         margin-left: 0px;
